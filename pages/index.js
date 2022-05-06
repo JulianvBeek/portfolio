@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Image from "next/image";
+import Link from "next/link";
 import { Header } from "../components/header";
 import styles from "../styles/Home.module.css";
 
@@ -28,14 +28,16 @@ export default function Home() {
             <span>Customer oriented</span>
             <span>Result driven</span>
           </section>
-          <a className={styles.cta} href="/portfolio">View Projects</a>
+          <Link href="/portfolio">
+            <a className={styles.cta}>View Projects</a>
+          </Link>
 
           <span className={styles.mouse}>
             <span></span>
           </span>
         </div>
 
-        <div>
+        <div >
           <h1>test</h1>
         </div>
       </main>

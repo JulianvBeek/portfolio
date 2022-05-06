@@ -9,7 +9,7 @@ export function Project({
 }) {
 
 const tagsList = tags.map((tag) => 
-    <li>{tag}</li>
+    <li key={tag}>{tag}</li>
 );
 
   return (

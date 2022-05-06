@@ -7,7 +7,7 @@ export function ContactLink() {
     <section className={styles.container}>
         <h3>Need a designer?</h3>
         <Link href="/contact">
-            <a>Let's work together &rarr;</a>
+            <a>Let&apos;s work together &rarr;</a>
         </Link>
     </section>
   );

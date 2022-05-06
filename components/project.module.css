@@ -1,0 +1,58 @@
+.project {
+    background: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    max-width: 600px;
+    margin: 1.5rem;
+    height: 350px;
+    position: relative;
+    width: 50%;
+    border-radius: 4px;
+    text-align: left;
+}
+
+.project > section {
+    position: absolute;
+    bottom: 1em;
+    left: 1em;
+}
+
+.project > section > ul {
+    color: white;
+    display: flex;
+    list-style-type: none;
+}
+
+.project > section > ul > li {
+    font-size: 10px;
+    margin-right: .5em;
+    padding: 1px 4px;
+    border: 1px solid white;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.project > section > h3 {
+    color: white;
+    text-transform: capitalize;
+    font-size: 22px;
+    font-weight: 500;
+    margin: 4px 0;
+}
+
+.project > section > a {
+    color: white;
+    font-size: 12px;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+    padding: 8px 16px;
+    position: relative;
+    right: 16px;
+}
+
+.project > section > a:hover {
+    text-decoration: underline;
+}

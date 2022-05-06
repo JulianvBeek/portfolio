@@ -1,0 +1,47 @@
+.container {
+  text-align: center;
+  margin-top: 16px;
+}
+
+.container > h3 {
+  color: rgb(255 255 255 / 0.7);
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.container > h3:after {
+  content: "";
+  background-color: white;
+  display: block;
+  height: 2px;
+  width: 140px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: .5em 0 1em 0;
+}
+
+.container a {
+    font-size: 72px;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    display: inline-block;
+}
+
+.container a:after {
+    content: '';
+    display: block;
+    background-color: white;
+    height: 4px;
+    width: 0;
+    position: relative;
+    margin-top: 8px;
+    transition: .4s width ease-in-out;
+}
+
+.container a:hover:after {
+    width: 100%;
+}

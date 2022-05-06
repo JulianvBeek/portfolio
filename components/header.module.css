@@ -1,0 +1,154 @@
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 0;
+  position: absolute;
+  width: calc(100vw - 300px);
+  z-index: 3;
+}
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  align-items: center;
+  transform: translateY(2px);
+  z-index: 2px;
+}
+
+.logo > .name {
+  font-size: 24px;
+}
+
+.logo > .function {
+  font-size: 14px;
+  text-transform: uppercase;
+  color: rgb(255 255 255 / 0.7);
+  letter-spacing: 2px;
+  transform: translateY(-4px);
+}
+
+.navigation {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation > ul {
+  color: white;
+  display: flex;
+  list-style-type: none;
+}
+
+.navigation > ul > li a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 8px 24px;
+  color: rgb(255 255 255 / 0.7);
+}
+
+.navigation > ul > li a.active {
+  color: white;
+  position: relative;
+}
+
+.navigation > ul > li a.active::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background-color: white;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 4px;
+}
+
+.hamburger {
+    transition: all .25s ease-in-out;
+    position: absolute;
+    right: 0;
+    display: none;
+    z-index: 5;
+}
+
+.hamburger.active {
+    transform: rotate(45deg);
+}
+
+.hamburger.active > span:nth-child(2) {
+    width: 0;
+}
+
+.hamburger.active > span:nth-child(1) {
+    transform: translateY(9px);
+}
+
+.hamburger.active > span:nth-child(3) {
+    transform: translateY(-9px) rotate(90deg);
+}
+
+.hamburger > span {
+    display: block;
+    width: 28px;
+    height: 2px;
+    border-radius: 9999px;
+    background-color: white;
+    transition: all .25s ease-in-out;
+}
+
+.hamburger > span:not(:last-child) {
+    margin-bottom: 7px;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 12px 0;
+    width: calc(100vw - 48px);
+    justify-content: center;
+    align-items: center;
+  }
+
+  .logo > .name {
+    font-size: 20px;
+  }
+
+  .logo > .function {
+    font-size: 12px;
+  }
+
+  .navigation {
+    transition: all 0.25s ease-in-out;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    transform: translateY(-100vh);
+    padding-top: 10vh;
+  }
+
+  .navigation.active {
+    transform: translateY(0);
+    transition: all 0.25s ease-in-out;
+    z-index: 3;
+    position: fixed;
+    background-color: #111;
+  }
+
+  .navigation.active ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hamburger {
+      display: block;
+      margin-left: auto;
+  }
+}

@@ -60,7 +60,7 @@
 @media screen and (max-width: 768px) {
     .project {
         height: 15em;
-        max-width: inherit;
+        max-width: 100%;
         margin: 0 0 24px 0;
         width: 100%;
     }

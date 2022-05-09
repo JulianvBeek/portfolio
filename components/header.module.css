@@ -109,7 +109,7 @@
 @media screen and (max-width: 768px) {
   .container {
     padding: 12px 0;
-    width: calc(100vw - 32px);
+    width: calc(100% - 32px);
     justify-content: center;
     align-items: center;
   }

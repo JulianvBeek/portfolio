@@ -31,22 +31,22 @@ export default function Home() {
             <span>Customer oriented</span>
             <span>Result driven</span>
           </section>
-          <Link href="/portfolio">
+          {/* <Link href="/portfolio">
             <a className={styles.cta}>View Projects</a>
-          </Link>
+          </Link> */}
 
           <span className={styles.mouse}>
             <span></span>
           </span>
         </div>
 
-        <>
+        {/* <>
           <h2 className={styles.heading}>Recent Projects</h2>
             <div className={styles.projects}>
               <Project tags={['design', 'code', 'work']} title="Soulance Marketing" image="https://i.postimg.cc/J7fkGP2K/soulance.png" pageLink="soulance" />
               <Project tags={['design', 'school']} title="Greenpeace Plastic Campaign" image="https://i.postimg.cc/cCY3hbHx/greenpeace.png" pageLink="greenpeace" />
             </div>
-        </>
+        </> */}
         <>
           <ContactLink />
         </>

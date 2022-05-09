@@ -1,13 +1,46 @@
 .container {
-    padding: 0 150px;
+  padding: 0 150px;
+  background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                              rgb(17 17 17 / .2) 40%,
+                              rgb(17 17 17 / .9) 80%,
+                              rgb(17 17 17 / 1) 100%), 
+              url(../public/images/portfolio.png) no-repeat #000;
+  background-size: 100%;
+  background-position-y: 100%;
+  min-height: 100vh;
+}
+
+.main {
+  color: white;
+  padding-bottom: 5rem;
+  text-align: center;
+  padding-top: 10em;
+  width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(10px);
+}
+
+.projects {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 4em auto;
+  text-align: center;
+}
+
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0 24px;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    min-height: 100vh;
   }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      padding: 0 24px;
-      display: flex;
-      justify-content: center;
-      width: 100vw;
-      min-height: 100vh;
-    }
-  }
+}

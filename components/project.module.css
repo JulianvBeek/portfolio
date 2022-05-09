@@ -56,3 +56,12 @@
 .project > section > a:hover {
     text-decoration: underline;
 }
+
+@media screen and (max-width: 768px) {
+    .project {
+        height: 15em;
+        max-width: inherit;
+        margin: 0 0 24px 0;
+        width: 100%;
+    }
+}

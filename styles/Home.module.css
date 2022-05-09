@@ -8,6 +8,7 @@
   background-size: 90%;
   background-position-x: 40vw;
   min-height: 100vh;
+  width: 100%;
 }
 
 .main {
@@ -164,6 +165,7 @@
     url(../public/images/home.jpg) no-repeat #000;
     background-size: 300%;
     background-position: 10% top;
+    width: 100%;
   }
 
   .main {

@@ -45,3 +45,13 @@
 .container a:hover:after {
     width: 100%;
 }
+
+@media screen and (max-width: 768px) {
+  .container > h3 {
+    font-size: 14px;
+  }
+
+  .container a {
+    font-size: 32px;
+  }
+}

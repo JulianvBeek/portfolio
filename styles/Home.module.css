@@ -156,7 +156,42 @@
     padding: 0 24px;
     display: flex;
     justify-content: center;
-    width: 100vw;
     min-height: 100vh;
+    background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / 0) 20%,
+                                rgb(17 17 17 / .9) 50%,
+                                rgb(17 17 17 / 1) 100%), 
+    url(../public/images/home.jpg) no-repeat #000;
+    background-size: 300%;
+    background-position: 10% top;
+  }
+
+  .main {
+    padding-top: 8em;
+  }
+
+  .name {
+    font-size: 14px;
+    transform: translateY(4px);
+  }
+
+  .function {
+    font-size: 32px;
+  }
+
+  .characteristics {
+    margin-bottom: 0;
+  }
+
+  .cta {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .mouse {
+    top: calc(100vh - 1.5em);
   }
 }

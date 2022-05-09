@@ -42,6 +42,10 @@ export default function Home() {
 
         <>
           <h2 className={styles.heading}>Recent Projects</h2>
+            <div className={styles.projects}>
+              <Project tags={['design', 'code', 'work']} title="Soulance Marketing" image="https://i.postimg.cc/J7fkGP2K/soulance.png" pageLink="soulance" />
+              <Project tags={['design', 'school']} title="Greenpeace Plastic Campaign" image="https://i.postimg.cc/cCY3hbHx/greenpeace.png" pageLink="greenpeace" />
+            </div>
         </>
         <>
           <ContactLink />

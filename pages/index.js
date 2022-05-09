@@ -23,14 +23,14 @@ export default function Home() {
             <span className={styles.name}>Julian van Beek</span>
             <h1 className={styles.function}>Web Designer</h1>
           </section>
-          <section className={styles.characteristics}>
+          {/* <section className={styles.characteristics}>
             <span>Creative</span>
             <span>Tech-savvy</span>
             <span>Passionated</span>
             <span>Eager to learn</span>
             <span>Customer oriented</span>
             <span>Result driven</span>
-          </section>
+          </section> */}
           <Link href="/portfolio">
             <a className={styles.cta}>View Projects</a>
           </Link>

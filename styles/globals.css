@@ -33,6 +33,7 @@ body {
   line-height: 1.8;
   font-size: 1.125rem;
   background: var(--kleur-achtergrond);
+  width: 100%;
 
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;

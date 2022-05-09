@@ -27,7 +27,30 @@ export function Header() {
         <span></span>
         <span></span>
       </div>
-      
+      <nav className={styles.navigation + " " + (activeMenu ? styles.active : "")}>
+        <ul>
+          <li>
+            <Link href="/">
+              <a className={router.pathname == "/" ? styles.active : ""}>Home</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/portfolio">
+            <a className={router.pathname == "/portfolio" ? styles.active : ""}>Portfolio</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/about">
+            <a className={router.pathname == "/about" ? styles.active : ""}>About</a>
+            </Link>
+          </li>
+          <li>
+            <Link href="/contact">
+            <a className={router.pathname == "/contact" ? styles.active : ""}>Contact</a>
+            </Link>
+          </li>
+        </ul>
+      </nav>
     </header>
   );
 }

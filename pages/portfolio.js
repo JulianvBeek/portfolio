@@ -1,6 +1,9 @@
-import Head from 'next/head'
-import { Header } from '../components/header'
-import styles from '../styles/Portfolio.module.css'
+import Head from "next/head";
+import { Header } from "../components/header";
+import { PageTitle } from "../components/pageTitle";
+import { Project } from "../components/project";
+import { ContactLink } from "../components/contactLink";
+import styles from "../styles/Portfolio.module.css";
 
 export default function Portfolio() {
   return (
@@ -13,11 +16,15 @@ export default function Portfolio() {
 
       <Header />
 
-      <main>
-          portfolio
+      <main className={styles.main}>
+        <PageTitle title="Portfolio" description="Projects I have worked on" />
+        <div className={styles.projects}>
+              <Project tags={['design', 'code', 'work']} title="Soulance Marketing" image="https://i.postimg.cc/J7fkGP2K/soulance.png" pageLink="soulance" />
+              <Project tags={['design', 'school']} title="Greenpeace Plastic Campaign" image="https://i.postimg.cc/cCY3hbHx/greenpeace.png" pageLink="greenpeace" />
+        </div>
+        <ContactLink />
       </main>
-      <footer>
-      </footer>
+      <footer></footer>
     </div>
-  )
+  );
 }

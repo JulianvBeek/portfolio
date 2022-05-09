@@ -1,6 +1,8 @@
 import Head from "next/head";
 import Link from "next/link";
+import { ContactLink } from "../components/contactLink";
 import { Header } from "../components/header";
+import { Project } from "../components/project";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -18,7 +20,7 @@ export default function Home() {
         <div className={styles.hero}>
           <section>
             <span className={styles.name}>Julian van Beek</span>
-            <span className={styles.function}>Web Designer</span>
+            <h1 className={styles.function}>Web Designer</h1>
           </section>
           <section className={styles.characteristics}>
             <span>Creative</span>
@@ -37,9 +39,16 @@ export default function Home() {
           </span>
         </div>
 
-        <div >
-          <h1>test</h1>
-        </div>
+        <>
+          <h2 className={styles.heading}>Recent Projects</h2>
+            <div className={styles.projects}>
+              <Project tags={['design', 'code', 'work']} title="Soulance Marketing" image="https://i.postimg.cc/J7fkGP2K/soulance.png" pageLink="soulance" />
+              <Project tags={['design', 'school']} title="Greenpeace Plastic Campaign" image="https://i.postimg.cc/cCY3hbHx/greenpeace.png" pageLink="greenpeace" />
+            </div>
+        </>
+        <>
+          <ContactLink />
+        </>
       </main>
     </div>
   );

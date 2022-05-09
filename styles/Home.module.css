@@ -1,17 +1,19 @@
 .container {
   padding: 0 150px;
   background: linear-gradient(rgb(17 17 17 / 1) 0%,
-                              rgb(17 17 17 / 0) 40%,
-                              rgb(17 17 17 / .9) 70%,
+                              rgb(17 17 17 / 0) 20%,
+                              rgb(17 17 17 / .9) 50%,
                               rgb(17 17 17 / 1) 100%), 
               url(../public/images/home.jpg) no-repeat #000;
-  background-position: 30vw 55%;
-  background-size: 100%;
+  background-size: 90%;
+  background-position-x: 40vw;
   min-height: 100vh;
 }
 
 .main {
   color: white;
+  padding-bottom: 5rem;
+  text-align: center;
 }
 
 .hero {
@@ -20,6 +22,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  text-align: left;
 }
 
 .name {
@@ -115,6 +118,37 @@
 }
 
 
+/* Projects */
+.projects {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 1300px;
+  margin: 0 auto 4em auto;
+  text-align: center;
+}
+
+.heading {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.heading:after {
+  content: '';
+  background-color: white;
+  display: block;
+  height: 2px;
+  width: 140px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: .5em 0 1em 0;
+}
+
+
+
+
 /* Mobile */
 
 @media screen and (max-width: 768px) {
@@ -122,7 +156,42 @@
     padding: 0 24px;
     display: flex;
     justify-content: center;
-    width: 100vw;
     min-height: 100vh;
+    background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / 0) 20%,
+                                rgb(17 17 17 / .9) 50%,
+                                rgb(17 17 17 / 1) 100%), 
+    url(../public/images/home.jpg) no-repeat #000;
+    background-size: 300%;
+    background-position: 10% top;
+  }
+
+  .main {
+    padding-top: 8em;
+  }
+
+  .name {
+    font-size: 14px;
+    transform: translateY(4px);
+  }
+
+  .function {
+    font-size: 32px;
+  }
+
+  .characteristics {
+    margin-bottom: 0;
+  }
+
+  .cta {
+    margin: 0 auto;
+    width: 100%;
+    display: block;
+    text-align: center;
+    margin-top: 3em;
+  }
+
+  .mouse {
+    top: calc(100vh - 1.5em);
   }
 }

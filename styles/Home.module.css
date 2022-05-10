@@ -66,6 +66,10 @@
   transform: translateY(2px);
 }
 
+.characteristics > span:last-child:after {
+  all: unset;
+}
+
 .cta {
   background-color: #FF4F00;
   padding: .5rem 3rem;

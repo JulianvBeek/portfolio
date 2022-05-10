@@ -59,9 +59,13 @@
 
 @media screen and (max-width: 768px) {
     .project {
-        height: 15em;
+        height: 13em;
         max-width: 100%;
         margin: 0 0 24px 0;
         width: 100%;
+    }
+
+    .project > section > h3 {
+        font-size: 18px;
     }
 }

@@ -163,13 +163,13 @@
                                 rgb(17 17 17 / .9) 50%,
                                 rgb(17 17 17 / 1) 100%), 
     url(../public/images/home.jpg) no-repeat #000;
-    background-size: 300%;
+    background-size: 250%;
     background-position: 10% top;
     width: 100%;
   }
 
   .main {
-    padding-top: 8em;
+    padding-top: 6em;
   }
 
   .name {
@@ -200,6 +200,6 @@
   }
 
   .mouse {
-    top: calc(100vh - 2.5em);
+    top: calc(100vh - 6em);
   }
 }

@@ -108,14 +108,10 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 12px;
-    width: calc(100vw - 32px);
+    padding: 12px 0;
+    width: 100vw;
     justify-content: center;
     align-items: center;
-  }
-
-  .logo {
-    transform: translateX(14px);
   }
 
   .logo > .name {
@@ -148,13 +144,16 @@
     background-color: #111;
   }
 
+  .navigation ul {
+    flex-direction: column;
+  }
+
   .navigation.active ul {
     display: flex;
-    flex-direction: column;
   }
 
   .hamburger {
       display: block;
-
+      right: 16px;
   }
 }

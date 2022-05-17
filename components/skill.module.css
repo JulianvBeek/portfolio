@@ -1,5 +1,5 @@
 .skillContainer {
-    margin: 1em;
+    margin: 1em 2em;
     display: flex;
     flex-direction: column;
 }
@@ -15,6 +15,7 @@
         width: 92px;
         height: 92px;
         display: block;
+        margin: 1em;
     }
 
     .skillContainer > span {

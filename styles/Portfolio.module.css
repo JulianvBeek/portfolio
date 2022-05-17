@@ -41,14 +41,14 @@
     display: flex;
     justify-content: center;
     background: linear-gradient(rgb(17 17 17 / 1) 0%,
-                                rgb(17 17 17 / .2) 5%,
-                                rgb(17 17 17 / 1) 40%,
-                                rgb(17 17 17 / 1) 70%), 
+                                rgb(17 17 17 / .2) 8%,
+                                rgb(17 17 17 / 1) 20%,
+                                rgb(17 17 17 / 1) 40%), 
     url(../public/images/portfolio.png) no-repeat #000;
     background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
-                                rgb(17 17 17 / 0) 20%,
-                                rgb(17 17 17 / .9) 50%,
-                                rgb(17 17 17 / 1) 100%), 
+                                rgb(17 17 17 / 0) 8%,
+                                rgb(17 17 17 / .9) 20%,
+                                rgb(17 17 17 / 1) 40%), 
     url(../public/images/portfolio.png) no-repeat #000;
     background-size: 250%;
     background-position: center top;

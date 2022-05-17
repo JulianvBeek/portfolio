@@ -1,17 +1,17 @@
 .container {
   padding: 0 150px;
   background: linear-gradient(rgb(17 17 17 / 1) 0%,
-                              rgb(17 17 17 / .4) 20%,
-                              rgb(17 17 17 / .9) 60%,
-                              rgb(17 17 17 / 1) 100%), 
+                              rgb(17 17 17 / .4) 10%,
+                              rgb(17 17 17 / .8) 35%, 
+                              rgb(17 17 17 / 1) 50%), 
               url(../public/images/about.jpg) no-repeat #000;
   background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
-                              rgb(17 17 17 / .4) 20%,
-                              rgb(17 17 17 / .9) 60%,
-                              rgb(17 17 17 / 1) 100%), 
+                              rgb(17 17 17 / .4) 10%,
+                              rgb(17 17 17 / .8) 35%, 
+                              rgb(17 17 17 / 1) 50%), 
               url(../public/images/about.jpg) no-repeat #000;
   background-size: 100%;
-  background-position-y: 100%;
+  background-position-y: top;
   min-height: 100vh;
 }
 

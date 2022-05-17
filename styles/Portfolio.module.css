@@ -1,8 +1,13 @@
 .container {
   padding: 0 150px;
   background: linear-gradient(rgb(17 17 17 / 1) 0%,
-                              rgb(17 17 17 / .2) 40%,
-                              rgb(17 17 17 / .9) 80%,
+                              rgb(17 17 17 / .4) 20%,
+                              rgb(17 17 17 / .9) 60%,
+                              rgb(17 17 17 / 1) 100%), 
+              url(../public/images/portfolio.png) no-repeat #000;
+  background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
+                              rgb(17 17 17 / .4) 20%,
+                              rgb(17 17 17 / .9) 60%,
                               rgb(17 17 17 / 1) 100%), 
               url(../public/images/portfolio.png) no-repeat #000;
   background-size: 100%;

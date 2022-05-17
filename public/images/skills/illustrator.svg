@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="52" height="52" viewBox="0 0 52 52">
+  <g id="Group_36" data-name="Group 36" transform="translate(-4766 -2474)">
+    <rect id="Rectangle_56" data-name="Rectangle 56" width="52" height="52" transform="translate(4766 2474)" fill="#261300"/>
+    <path id="Icon_simple-adobeillustrator" data-name="Icon simple-adobeillustrator" d="M0,.45v52H52V.45ZM2.167,2.672H49.833V50.228H2.167ZM18.038,29.894l-1.716,6.662c-.037.184-.108.227-.321.227H12.82c-.217,0-.249-.073-.217-.329l6.153-22.1a7.02,7.02,0,0,0,.212-1.851c0-.147.072-.222.18-.222H23.69c.143,0,.217.04.251.222l6.9,23.987c.037.184,0,.293-.18.293H27.088c-.18,0-.286-.044-.321-.191l-1.787-6.7H18.031Zm6.041-3.611c-.607-2.458-2.037-7.84-2.574-10.444h-.037c-.464,2.6-1.608,7-2.5,10.444Zm9.75-12.351a2.217,2.217,0,1,1,4.433,0,2.1,2.1,0,0,1-2.253,2.273,2.064,2.064,0,0,1-2.188-2.273Zm.243,5.053c0-.178.071-.244.251-.244h3.4c.191,0,.26.073.26.258V36.543c0,.184-.035.258-.249.258H34.376c-.217,0-.288-.111-.288-.289V18.983Z" transform="translate(4766 2473.55)" fill="#ff8109"/>
+    <g id="Rectangle_57" data-name="Rectangle 57" transform="translate(4766 2474)" fill="none" stroke="#ff8109" stroke-width="3">
+      <rect width="52" height="52" stroke="none"/>
+      <rect x="1.5" y="1.5" width="49" height="49" fill="none"/>
+    </g>
+  </g>
+</svg>

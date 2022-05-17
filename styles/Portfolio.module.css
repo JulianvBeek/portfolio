@@ -41,7 +41,7 @@
     display: flex;
     justify-content: center;
     background: linear-gradient(rgb(17 17 17 / 1) 0%,
-                                rgb(17 17 17 / 1) 20%,
+                                rgb(17 17 17 / .2) 20%,
                                 rgb(17 17 17 / 1) 40%,
                                 rgb(17 17 17 / 1) 70%), 
     url(../public/images/portfolio.png) no-repeat #000;

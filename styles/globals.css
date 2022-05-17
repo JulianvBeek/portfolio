@@ -38,3 +38,7 @@ body {
   -moz-osx-font-smoothing: grayscale;
   text-rendering: optimizeLegibility;
 }
+
+html {
+  overflow-y: overlay;
+}

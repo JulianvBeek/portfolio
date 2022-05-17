@@ -67,5 +67,6 @@
 
     .project > section > h3 {
         font-size: 18px;
+        margin: 0;
     }
 }

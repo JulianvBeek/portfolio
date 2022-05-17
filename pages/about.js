@@ -32,11 +32,11 @@ export default function About() {
         <PageTitle title="About Me" description="Get to know me" />
         <section className={styles.aboutContainer}>
           <h2>A few words about me</h2>
-          <p>I'm Julian van Beek, a web designer based in Den Hoorn, The Netherlands. Designing and coding is a passion of me. The moment I created my first website, I Realized that this is what I like to do as a job in the future. I like the combination of designing and coding websites.</p>
+          <p>I&apos;m Julian van Beek, a web designer based in Den Hoorn, The Netherlands. Designing and coding is a passion of me. The moment I created my first website, I Realized that this is what I like to do as a job in the future. I like the combination of designing and coding websites.</p>
         </section>
         <section className={styles.experienceContainer}>
           <h2 className={styles.subTitle}>Experience</h2>
-          <p>Currently I'm studying Communication and Multimedia Design. Besides my study I've also done several commercial projects in web design and coding.</p>
+          <p>Currently I&apos;m studying Communication and Multimedia Design. Besides my study I&apos;ve also done several commercial projects in web design and coding.</p>
 
           <table className={styles.timeLine}>
             <thead>

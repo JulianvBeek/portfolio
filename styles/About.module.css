@@ -137,12 +137,12 @@
     display: flex;
     justify-content: center;
     background: linear-gradient(rgb(17 17 17 / 1) 0%,
-                                rgb(17 17 17 / .2) 4%,
+                                rgb(17 17 17 / .4) 4%,
                                 rgb(17 17 17 / .9) 10%,
                                 rgb(17 17 17 / 1) 20%), 
     url(../public/images/about.jpg) no-repeat #000;
     background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
-                                rgb(17 17 17 / 0) 4%,
+                                rgb(17 17 17 / .4) 4%,
                                 rgb(17 17 17 / .9) 10%,
                                 rgb(17 17 17 / 1) 20%), 
     url(../public/images/about.jpg) no-repeat #000;

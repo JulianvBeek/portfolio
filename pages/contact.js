@@ -35,19 +35,19 @@ export default function Contact() {
           <form onSubmit={sendEmail}>
             <h2>Tell me about yourself</h2>
             <div className={styles.half}>
-              <label for="name">Name</label>
+              <label htmlFor="name">Name</label>
               <input type="text" placeholder="Name" name="name" />
             </div>
             <div className={styles.half}>
-              <label for="phone">Phone</label>
+              <label htmlFor="phone">Phone</label>
               <input type="tel" placeholder="Phone" name="phone" />
             </div>
             <div>
-              <label for="email">Email</label>
+              <label htmlFor="email">Email</label>
               <input type="email" placeholder="Email" name="email" />
             </div>
             <div>
-              <label for="message">Message</label>
+              <label htmlFor="message">Message</label>
               <textarea name="message" placeholder="How can I help?" rows="8" />
             </div>
             <input className={styles.submitButton} type="submit" value="Submit Message" />

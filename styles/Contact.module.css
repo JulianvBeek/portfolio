@@ -112,6 +112,7 @@
   font-weight: 400;
   letter-spacing: 1px;
   margin: 16px 16px 0 auto;
+  -webkit-appearance: initial;
 }
 
 .submitButton:hover,

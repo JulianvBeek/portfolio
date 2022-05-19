@@ -1,13 +1,158 @@
 .container {
-    padding: 0 150px;
+  background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                              rgb(17 17 17 / .4) 20%,
+                              rgb(17 17 17 / .9) 60%,
+                              rgb(17 17 17 / 1) 100%), 
+              url(../public/images/contact.jpg) no-repeat #000;
+  background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
+                              rgb(17 17 17 / .4) 20%,
+                              rgb(17 17 17 / .9) 60%,
+                              rgb(17 17 17 / 1) 100%), 
+              url(../public/images/contact.jpg) no-repeat #000;
+  background-size: 100%;
+  background-position-y: 100%;
+  min-height: 100vh;
+}
+
+.main {
+  color: white;
+  padding-bottom: 5rem;
+  text-align: center;
+  padding-top: 10em;
+  width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(10px);
+}
+
+.contactContainer {
+  background-color: white;
+  color: black;
+  max-width: 1200px;
+  padding: 50px 200px;
+  display: flex;
+  justify-content: left;
+  margin: 12vh auto 100px auto;
+}
+
+.contactContainer form {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.contactContainer h2 {
+  font-size: 38px;
+  font-weight: 500;
+  display: block;
+}
+
+.contactContainer div {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  text-align: left;
+  margin: 16px 16px 16px 0;
+  letter-spacing: 1px;
+  width: 100%;
+}
+
+.contactContainer .half {
+  width: calc(50% - 16px);
+  box-sizing: border-box;
+}
+
+.contactContainer label {
+  font-size: 12px;
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #333333;
+}
+
+.contactContainer input[type="text"], 
+.contactContainer input[type="tel"], 
+.contactContainer input[type="email"], 
+.contactContainer textarea {
+  padding: 16px;
+  border: 1px solid #c5c5c5;
+  border-radius: 4px;
+  color: #111111;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+.contactContainer input[type="text"]:focus, 
+.contactContainer input[type="tel"]:focus, 
+.contactContainer input[type="email"]:focus, 
+.contactContainer textarea:focus {
+  outline: none;
+}
+
+.contactContainer input[type="text"]::placeholder, 
+.contactContainer input[type="tel"]::placeholder, 
+.contactContainer input[type="email"]::placeholder, 
+.contactContainer textarea::placeholder {
+  color: rgb(0, 0, 0 / .6);
+  font-size: 14px;
+}
+
+.submitButton {
+  background-color: #FF4F00;
+  padding: 16px 32px;
+  border-radius: 4px;
+  color: white;
+  box-shadow: 1px 1px 1px #C94001;
+  cursor: pointer;
+  position: relative;
+  transition: all .2s ease-in-out;
+  outline: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 16px 16px 0 auto;
+}
+
+.submitButton:hover,
+.submitButton:active {
+  background-color: #C94001;
+  transition: all .2s ease-in-out;
+}
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / .2) 8%,
+                                rgb(17 17 17 / 1) 20%,
+                                rgb(17 17 17 / 1) 40%), 
+    url(../public/images/contact.jpg) no-repeat #000;
+    background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / 0) 8%,
+                                rgb(17 17 17 / .9) 20%,
+                                rgb(17 17 17 / 1) 40%), 
+    url(../public/images/contact.jpg) no-repeat #000;
+    background-size: 250%;
+    background-position: center top;
+    width: 100%;
+    min-height: 100vh;
   }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      padding: 0 24px;
-      display: flex;
-      justify-content: center;
-      width: 100vw;
-      min-height: 100vh;
-    }
+
+  .main {
+    padding: 10em 24px 0 24px;
   }
+
+  .contactContainer {
+    padding: 20px;
+  }
+
+  .contactContainer h2 {
+    font-size: 24px;
+    margin-bottom: 1em;
+  }
+}

@@ -54,7 +54,6 @@ export default function Contact() {
           </form>
         </section>
       </main>
-      <footer></footer>
     </div>
   );
 }

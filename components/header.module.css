@@ -146,6 +146,8 @@
 
   .navigation ul {
     flex-direction: column;
+    width: 100%;
+    text-align: center;
   }
 
   .navigation.active ul {
@@ -155,5 +157,11 @@
   .hamburger {
       display: block;
       right: 16px;
+  }
+
+  .navigation > ul > li a {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
   }
 }

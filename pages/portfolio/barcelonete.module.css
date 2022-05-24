@@ -95,4 +95,18 @@
     .main {
       padding: 10em 24px 0 24px;
     }
+
+    .projectInfo {
+      margin: 16vh 10px;
+      padding: 20px;
+    }
+  
+    .projectInfo > h2 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  
+    .projectInfo > p {
+      font-size: 16px;
+    }
   }

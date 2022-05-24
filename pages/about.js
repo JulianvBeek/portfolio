@@ -74,7 +74,6 @@ export default function About() {
             <Skill name="CSS 3" image={CSS} />
             <Skill name="Javascript" image={Javascript} />
             <Skill name="React" image={React} />
-            <Skill name="Magento 2" image={Magento} />
             <Skill name="Git" image={Git} />
           </section>
         </section>

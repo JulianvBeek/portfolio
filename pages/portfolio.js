@@ -21,8 +21,8 @@ export default function Portfolio() {
       <main className={styles.main}>
         <PageTitle title="Portfolio" description="Projects I have worked on" />
         <div className={styles.projects}>
-              <Project tags={['design', 'code', 'work']} title="Soulance Marketing" image="https://i.postimg.cc/J7fkGP2K/soulance.png" pageLink="soulance" />
-              <Project tags={['design', 'school']} title="Greenpeace Plastic Campaign" image="https://i.postimg.cc/cCY3hbHx/greenpeace.png" pageLink="greenpeace" />
+        <Project tags={['Design', 'School']} title="Barcelonete" image="https://i.postimg.cc/SsgDjJx7/barcelonete.png" pageLink="barcelonete" />
+              <Project tags={['design', 'school']} title="Greenpeace Plastic Campaign" image="https://i.postimg.cc/cCY3hbHx/greenpeace.png" pageLink="greenpeace" comingSoon />
         </div>
         <ContactLink />
       </main>

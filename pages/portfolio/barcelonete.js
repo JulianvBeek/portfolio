@@ -21,7 +21,7 @@ export default function Barcelonete() {
         <PageTitle title="Barcelonete" description="User Experience Research" />
         <section className={styles.projectInfo}>
           <h2>About the project</h2>
-          <p>For a subject at school, I did research into the user experience of the website of Barcelonete. Barcelonete is a clothing brand that has been around for about three years now. The main question during this research was "how could the user experience of the website be improved, so that the target group no longer has problems with using the webshop.</p>
+          <p>For a subject at school, I did research into the user experience of the website of Barcelonete. Barcelonete is a clothing brand that has been around for about three years now. The main question during this research was &quot;how could the user experience of the website be improved, so that the target group no longer has problems with using the webshop.&quot;</p>
           <p>To answer the main question, I took multiple steps during this project. These steps are divided into 4 phases as follows:</p>
           <strong>Research</strong>
           <ul>
@@ -46,7 +46,7 @@ export default function Barcelonete() {
             <li>Testing the Hi-fi prototype</li>
           </ul>
           <p>After completing these steps, the result if a hi-fi prototype that solves the problem.</p>
-          <a target="_blank" className={styles.cta} href="https://xd.adobe.com/view/8abd4b30-5391-4e93-995b-bfae7df5251a-dfee/">Take a look</a>
+          <a target="_blank" rel="noreferrer" className={styles.cta} href="https://xd.adobe.com/view/8abd4b30-5391-4e93-995b-bfae7df5251a-dfee/">Take a look</a>
         </section>
         <ContactLink />
       </main>

@@ -2,9 +2,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px 0;
+  padding: 16px 150px;
   position: absolute;
-  width: calc(100vw - 300px);
+  left: 0;
+  top: 0;
+  width: 100%;
   z-index: 3;
 }
 
@@ -107,7 +109,7 @@
 @media screen and (max-width: 768px) {
   .container {
     padding: 12px 0;
-    width: calc(100vw - 48px);
+    width: 100vw;
     justify-content: center;
     align-items: center;
   }
@@ -142,13 +144,24 @@
     background-color: #111;
   }
 
+  .navigation ul {
+    flex-direction: column;
+    width: 100%;
+    text-align: center;
+  }
+
   .navigation.active ul {
     display: flex;
-    flex-direction: column;
   }
 
   .hamburger {
       display: block;
-      margin-left: auto;
+      right: 16px;
+  }
+
+  .navigation > ul > li a {
+    display: block;
+    width: 100%;
+    padding: 16px 0;
   }
 }

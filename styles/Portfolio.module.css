@@ -1,8 +1,12 @@
 .container {
-  padding: 0 150px;
   background: linear-gradient(rgb(17 17 17 / 1) 0%,
-                              rgb(17 17 17 / .2) 40%,
-                              rgb(17 17 17 / .9) 80%,
+                              rgb(17 17 17 / .4) 20%,
+                              rgb(17 17 17 / .9) 60%,
+                              rgb(17 17 17 / 1) 100%), 
+              url(../public/images/portfolio.png) no-repeat #000;
+  background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
+                              rgb(17 17 17 / .4) 20%,
+                              rgb(17 17 17 / .9) 60%,
                               rgb(17 17 17 / 1) 100%), 
               url(../public/images/portfolio.png) no-repeat #000;
   background-size: 100%;
@@ -37,10 +41,26 @@
 
 @media screen and (max-width: 768px) {
   .container {
-    padding: 0 24px;
+    padding: 0;
     display: flex;
     justify-content: center;
-    width: 100vw;
+    background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / .2) 8%,
+                                rgb(17 17 17 / 1) 20%,
+                                rgb(17 17 17 / 1) 40%), 
+    url(../public/images/portfolio.png) no-repeat #000;
+    background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / 0) 8%,
+                                rgb(17 17 17 / .9) 20%,
+                                rgb(17 17 17 / 1) 40%), 
+    url(../public/images/portfolio.png) no-repeat #000;
+    background-size: 250%;
+    background-position: center top;
+    width: 100%;
     min-height: 100vh;
+  }
+
+  .main {
+    padding: 10em 24px 0 24px;
   }
 }

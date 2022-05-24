@@ -1,0 +1,117 @@
+.container {
+    background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / .4) 20%,
+                                rgb(17 17 17 / .9) 60%,
+                                rgb(17 17 17 / 1) 100%), 
+                url("https://i.postimg.cc/SsgDjJx7/barcelonete.png") no-repeat #000;
+    background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / .4) 20%,
+                                rgb(17 17 17 / .9) 60%,
+                                rgb(17 17 17 / 1) 100%), 
+                url("https://i.postimg.cc/SsgDjJx7/barcelonete.png") no-repeat #000;
+    background-size: 100%;
+    min-height: 100vh;
+  }
+  
+  .main {
+    color: white;
+    padding-bottom: 5rem;
+    text-align: center;
+    padding-top: 10em;
+    width: 100%;
+    min-height: 100vh;
+    backdrop-filter: blur(6px);
+  }
+
+  .projectInfo {
+    background-color: white;
+    color: black;
+    max-width: 1200px;
+    padding: 50px 200px;
+    text-align: left;
+    margin: 15vh auto
+  }
+  
+  .projectInfo > h2 {
+    font-weight: 500;
+    font-size: 36px;
+    margin-bottom: 8px;
+  }
+  
+  .projectInfo > p {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: 1px;
+    margin-bottom: 2em;
+  }
+
+  .projectInfo > ul {
+    margin-left: 2em;
+    margin-bottom: 1em;
+  }
+
+  .cta {
+    background-color: #FF4F00;
+    padding: .5rem 3rem;
+    border-radius: 4px;
+    color: white;
+    box-shadow: 1px 1px 1px #C94001;
+    cursor: pointer;
+    text-decoration: none;
+    margin-right: auto;
+    transition: all .2s ease-in-out;
+    display: block;
+    width: 200px;
+  }
+  
+  .cta:hover, .cta:active {
+    background-color: #C94001;
+    transition: all .2s ease-in-out;
+  }
+  
+  /* Mobile */
+  
+  @media screen and (max-width: 768px) {
+    .container {
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                                  rgb(17 17 17 / .2) 8%,
+                                  rgb(17 17 17 / 1) 20%,
+                                  rgb(17 17 17 / 1) 40%), 
+      url("https://i.postimg.cc/SsgDjJx7/barcelonete.png") no-repeat #000;
+      background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
+                                  rgb(17 17 17 / 0) 8%,
+                                  rgb(17 17 17 / .9) 20%,
+                                  rgb(17 17 17 / 1) 40%), 
+      url("https://i.postimg.cc/SsgDjJx7/barcelonete.png") no-repeat #000;
+      background-size: 250%;
+      background-position: center top;
+      width: 100%;
+      min-height: 100vh;
+    }
+  
+    .main {
+      padding: 10em 24px 0 24px;
+    }
+
+    .projectInfo {
+      margin: 16vh 10px;
+      padding: 20px;
+    }
+  
+    .projectInfo > h2 {
+      font-size: 22px;
+      font-weight: 600;
+    }
+  
+    .projectInfo > p {
+      font-size: 16px;
+    }
+
+    .cta {
+      width: 100%;
+      text-align: center;
+    }
+  }

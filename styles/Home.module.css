@@ -8,6 +8,7 @@
   background-size: 90%;
   background-position-x: 40vw;
   min-height: 100vh;
+  width: 100%;
 }
 
 .main {
@@ -63,6 +64,10 @@
   position: relative;
   left: .75rem;
   transform: translateY(2px);
+}
+
+.characteristics > span:last-child:after {
+  all: unset;
 }
 
 .cta {
@@ -156,18 +161,25 @@
     padding: 0 24px;
     display: flex;
     justify-content: center;
-    min-height: 100vh;
     background: linear-gradient(rgb(17 17 17 / 1) 0%,
                                 rgb(17 17 17 / 0) 20%,
                                 rgb(17 17 17 / .9) 50%,
                                 rgb(17 17 17 / 1) 100%), 
     url(../public/images/home.jpg) no-repeat #000;
-    background-size: 300%;
+    background-size: 250%;
     background-position: 10% top;
+    width: 100%;
+    min-height: 100vh;
   }
 
   .main {
-    padding-top: 8em;
+    padding-top: 4em;
+  }
+
+  .hero {
+    height: inherit;
+    padding-top: 30vh;
+    padding-bottom: 5em;
   }
 
   .name {
@@ -181,6 +193,12 @@
 
   .characteristics {
     margin-bottom: 0;
+    max-width: 100vw;
+    width: 100%;
+  }
+
+  .characteristics > span {
+    white-space: normal;
   }
 
   .cta {
@@ -188,10 +206,10 @@
     width: 100%;
     display: block;
     text-align: center;
-    margin-top: 3em;
+    margin-top: 2em;
   }
 
   .mouse {
-    top: calc(100vh - 1.5em);
+    top: calc(100vh - 7em);
   }
 }

@@ -1,13 +1,200 @@
 .container {
-    padding: 0 150px;
+  background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                              rgb(17 17 17 / .4) 10%,
+                              rgb(17 17 17 / .8) 35%, 
+                              rgb(17 17 17 / 1) 50%), 
+              url(../public/images/about.jpg) no-repeat #000;
+  background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
+                              rgb(17 17 17 / .4) 10%,
+                              rgb(17 17 17 / .8) 35%, 
+                              rgb(17 17 17 / 1) 50%), 
+              url(../public/images/about.jpg) no-repeat #000;
+  background-size: 100%;
+  background-position-y: top;
+  min-height: 100vh;
+}
+
+.main {
+  color: white;
+  padding-bottom: 5rem;
+  text-align: center;
+  padding-top: 10em;
+  width: 100%;
+  min-height: 100vh;
+  backdrop-filter: blur(10px);
+}
+
+.aboutContainer {
+  background-color: white;
+  color: black;
+  max-width: 1200px;
+  padding: 50px 200px;
+  text-align: left;
+  margin: 15vh auto
+}
+
+.aboutContainer > h2 {
+  font-weight: 500;
+  font-size: 36px;
+  margin-bottom: 8px;
+}
+
+.aboutContainer > p {
+  font-size: 18px;
+  line-height: 28px;
+  letter-spacing: 1px;
+}
+
+.subTitle {
+  font-size: 32px;
+  color: white;
+  font-weight: 500;
+}
+
+.subTitle:after {
+  content: '';
+  background-color: white;
+  display: block;
+  height: 2px;
+  width: 140px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: .5em 0;
+}
+
+.experienceContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 100px;
+}
+
+.experienceContainer > p {
+  font-size: 18px;
+  color: rgb(255 255 255 / .7);
+  letter-spacing: 1px;
+  width: 40vw;
+  line-height: 28px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.timeLine {
+  width: 70vw;
+  text-align: center;
+  margin: 0 auto;
+}
+
+.timeLine > thead > tr > th {
+  font-size: 22px;
+  font-weight: 500;
+  padding: 8px 0;
+  width: calc(100% / 3);
+}
+
+.timeLine > tbody > tr > td {
+  font-size: 18px;
+  color: rgb(255 255 255 / .7);
+  padding-bottom: 16px;
+  font-weight: 300;
+}
+
+.skillsContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 4em;
+}
+
+.skillsContainer > p {
+  font-size: 18px;
+  color: rgb(255 255 255 / .7);
+  letter-spacing: 1px;
+  width: 40vw;
+  line-height: 28px;
+  font-weight: 300;
+  margin-bottom: 60px;
+}
+
+.skillsList {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 1400px;
+  width: 80vw;
+}
+
+
+
+
+/* Mobile */
+
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    background: linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / .4) 4%,
+                                rgb(17 17 17 / .9) 10%,
+                                rgb(17 17 17 / 1) 20%), 
+    url(../public/images/about.jpg) no-repeat #000;
+    background: -webkit-linear-gradient(rgb(17 17 17 / 1) 0%,
+                                rgb(17 17 17 / .4) 4%,
+                                rgb(17 17 17 / .9) 10%,
+                                rgb(17 17 17 / 1) 20%), 
+    url(../public/images/about.jpg) no-repeat #000;
+    background-size: 250%;
+    background-position: center top;
+    width: 100%;
+    min-height: 100vh;
   }
-  
-  @media screen and (max-width: 768px) {
-    .container {
-      padding: 0 24px;
-      display: flex;
-      justify-content: center;
-      width: 100vw;
-      min-height: 100vh;
-    }
+
+  .main {
+    padding: 10em 24px 0 24px;
   }
+
+  .aboutContainer {
+    margin: 16vh 10px;
+    padding: 20px;
+  }
+
+  .aboutContainer > h2 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .aboutContainer > p {
+    font-size: 16px;
+  }
+
+  .subTitle {
+    font-size: 24px;
+  }
+
+  .experienceContainer > p {
+    text-align: left;
+    font-size: 14px;
+    width: 100%;
+  }
+
+  .timeLine {
+    width: 100%;
+    text-align: left;
+  }  
+
+  .timeLine > thead > tr > th {
+    font-size: 18px;
+  }
+
+  .timeLine > tbody > tr > td {
+    font-size: 14px;
+  }
+
+  .skillsContainer > p {
+    width: 100%;
+    text-align: left;
+    font-size: 16px;
+  }
+}

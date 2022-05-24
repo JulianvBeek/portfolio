@@ -14,6 +14,8 @@ import CSS from '../public/images/skills/css.svg';
 import Javascript from '../public/images/skills/javascript.svg';
 import Magento from '../public/images/skills/magento.svg';
 import Git from '../public/images/skills/git.svg';
+import Figma from '../public/images/skills/figma.svg';
+import React from '../public/images/skills/react.svg';
 
 export default function About() {
   return (
@@ -65,11 +67,13 @@ export default function About() {
           <p>It goes without saying that I know how to work with the most commonly used (design)tools and programming languagues. Next to that I am eager to learn new programs. I also have experience in customer contacts and sales what I learned during my side job as sales employee.</p>
           <section className={styles.skillsList}>
             <Skill name="Adobe XD" image={XD} />
+            <Skill name="Figma" image={Figma} />
             <Skill name="Illustrator" image={Illustrator} />
             <Skill name="Photoshop" image={Photoshop} />
             <Skill name="HTML 5" image={HTML} />
             <Skill name="CSS 3" image={CSS} />
             <Skill name="Javascript" image={Javascript} />
+            <Skill name="React" image={React} />
             <Skill name="Magento 2" image={Magento} />
             <Skill name="Git" image={Git} />
           </section>

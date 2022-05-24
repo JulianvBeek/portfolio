@@ -97,6 +97,10 @@
   font-size: 14px;
 }
 
+.contactContainer textarea {
+  resize: vertical;
+}
+
 .submitButton {
   background-color: #FF4F00;
   padding: 16px 32px;
